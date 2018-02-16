@@ -47,7 +47,7 @@ def square_highlighting(square_coordinates,solution):
 		c.create_rectangle([(intermediate_x_start,intermediate_y_start),(intermediate_x_end,intermediate_y_end)],
 			fill='blue',tag='intermediate')
 		#c.after(500,c.delete('intermediate'))
-		c.after(500,square_highlighting,square_coordinates[1:],delay)
+		c.after(10,square_highlighting,square_coordinates[1:],solution)
 		#c.delete('intermediate')
 
 
